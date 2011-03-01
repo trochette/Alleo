@@ -1,17 +1,10 @@
-<?php
-id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-trajet_id INT NOT NULL ,
-utilisateur_id INT NOT NULL ,
-description VARCHAR( 250 ) NOT NULL ,
-date_heure DATETIME NOT NULL,
-vehicule_id INT NOT NULL,
-
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 	class Offre_model extends CI_Model
 	{
 		var $id;
 		var $trajet_id;
-		var $utilisateur_id;
+		var $utilisateur;
 		var $date_heure;
 		var $description;
 		var $vehicule_id;
@@ -21,12 +14,12 @@ vehicule_id INT NOT NULL,
 			parent::__construct();
 		}
 		
-		function insert($id,  $trajet_id, $utilisateur_id, $date_heure, $description, $vehicule_id)
+		function insert($id,  $trajet_id, $utilisateur, $date_heure, $description, $vehicule_id)
 		{
 			$this->load->database();
 			$this->id = NULL;
 			$this->trajet_id = $trajet_id;
-			$this->utilisateur_id = $utilisateur_id;
+			$this->utilisateur = $utilisateur;
 			$this->date_heure = $date_heure;
 			$this->description = $description;
 			$this->vehicule_id = $vehicule_id;

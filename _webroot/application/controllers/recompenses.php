@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Gagnants extends CI_Controller {
+class Recompenses extends CI_Controller {
 
 	function __construct()
 	{
@@ -14,7 +14,7 @@ class Gagnants extends CI_Controller {
 		//{
 		//	$data['user'] = $_SESSION['user'];
 			//$data['page_title'] = "mettre un titre";
-			$this->load->view('gagnants');
+			$this->load->view('recompenses');
 		//}
 		//else
 		//{

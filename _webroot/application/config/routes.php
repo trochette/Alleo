@@ -44,36 +44,14 @@ $route['404_override'] = '';
 $route['scaffolding_trigger'] = "scaffolding";
 
 
-
-$route['index/(.*)'] = 'site/Programmation/horaire_salon/$1';
-
 /*Site routes*/ 
 
 
 $route['index']		 	   	       	   = 'accueil/index'; 
-$route['login']		 	   	       	   = 'accueil/login'; 
-$route['inscription']		 	   	   = 'accueil/inscription'; 
+$route['login']		 	   	       	   = 'login/index'; 
+$route['inscription']		 	   	   = 'inscription/index'; 
 $route['profil']		 	   	   		= 'moncompte/index'; 
-
-$route['partenaires/(.*)']		 	  	   = 'site/Partenaires/$1'; 
-
-$route['partenaires']		 	   	       = 'site/Partenaires'; 
-
-$route['organisation/(.*)']		 	  	   = 'site/Organisation/$1'; 
-
-$route['organisation']		 	   	       = 'site/Organisation'; 
-
-$route['prix_et_concours/(.*)']		 	   = 'site/Prix/$1'; 
-
-$route['prix_et_concours']		 	   	   = 'site/Prix'; 
-
-$route['informations/(.*)']		 	   	   = 'site/Informations/$1'; 
-
-$route['informations']		 	   	   	   = 'site/Informations'; 
-
-$route['programmation/(.*)']		 	   = 'site/Programmation/$1'; 
-
-$route['programmation']		 		 	   = 'site/Programmation';    
+  
 
 
 /* End of file routes.php */

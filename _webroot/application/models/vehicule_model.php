@@ -1,8 +1,8 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	class Vehicule_model extends CI_Model
 	{
 		var $id;
-		var $utilisateur_id;
+		var $utilisateur;
 		var $marque;
 		var $modele;
 		var $annnee;
@@ -15,11 +15,11 @@
 			parent::__construct();
 		}
 		
-		function insert($id, $utilisateur_id, $marque, $modele, $annnee, $couleur, $immatriculation, $manger)
+		function insert($id, $utilisateur, $marque, $modele, $annnee, $couleur, $immatriculation, $manger)
 		{
 			$this->load->database();
 			$this->id = $id;
-			$this->utilisateur_id = $utilisateur_id;
+			$this->utilisateur = $utilisateur;
 			$this->marque = $marque;
 			$this->modele = $modele;
 			$this->annnee = $annnee;
@@ -29,11 +29,11 @@
 			$this->db->insert('vehicules', $this);
 		}
 		
-		function update($id, $utilisateur_id, $marque, $modele, $annnee, $couleur, $immatriculation, $manger)
+		function update($id, $utilisateur, $marque, $modele, $annnee, $couleur, $immatriculation, $manger)
 		{
 			$this->load->database();
 			$this->id = $id;
-			$this->utilisateur_id = $utilisateur_id;
+			$this->utilisateur = $utilisateur;
 			$this->marque = $marque;
 			$this->modele = $modele;
 			$this->annnee = $annnee;
@@ -60,7 +60,7 @@
 			{
 				$row =  $query->row();
 				$this->id = $row->id;
-				$this->utilisateur_id = $row->utilisateur_id;
+				$this->utilisateur = $row->utilisateur;
 				$this->marque = $row->marque;
 				$this->modele = $row->modele;
 				$this->annnee = $row->annnee;

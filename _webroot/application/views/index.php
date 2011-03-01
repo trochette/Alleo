@@ -14,13 +14,14 @@
             <div id="header">
                 <div id="header-top">
                     <div class="logo">
+                        <a href="<?php echo $this->config->item('base_url');?>index.php/" ></a>
                     </div>
 
                     <div class="top-links">
                         <ul>
                             <li><a href="#">Devenez Partenaire</a></li>
                             <li><a href="<?php echo $this->config->item('base_url');?>index.php/gagnants/index">Gagnants sur toute la ligne</a></li>
-                            <li><a href="#">Programme de récompenses</a></li>
+                            <li><a href="<?php echo $this->config->item('base_url');?>index.php/recompenses/index">Programme de récompenses</a></li>
                             <li><a href="#">Québec ville verte</a></li>
                         </ul>
                     </div>
@@ -54,12 +55,13 @@
                     <div class="subscribe">
                         <ul>
                             <li class="first">Devenez membre</li>
-                            <li><a href="./inscription?conducteur">Je suis conducteur</a></li>
-                            <li><a href="./inscription?passager">Je suis passager</a></li>
+                            <li><a href="inscription">Je suis conducteur</a></li>
+                            <li><a href="inscription">Je suis passager</a></li>
                         </ul>
                     </div>
                     <div class="login">
-						<form action='./login' method='post' />				
+						<?php echo validation_errors(); ?>
+						<?php echo form_open('login'); ?>				
                             <input type="text" name="username" value="Nom d'usager" onclick="$(this).val('');" />
                             <input type="password" name="password" value="Mot de passe" onclick="$(this).val('');" />
                             <input id="connect" type="submit" value="Connexion" />
@@ -148,7 +150,7 @@
 
                             </div>
                             <div class="center">
-                                <p>Lorem ipsum</p>
+                                <p>J'utilise les services d'Alleo depuis un an et j'ai toujours comblé toutes mes places rapidement. J'ai même eu droit à deux cadeaux! Génial.</p>
                             </div>
                             <div class="bottom">
 

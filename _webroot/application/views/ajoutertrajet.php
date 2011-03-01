@@ -116,14 +116,14 @@ $(document).ready(function() {
             <div id="header">
                 <div id="header-top">
                     <div class="logo">
-
+                         <a href="<?php echo $this->config->item('base_url');?>index.php/" ></a>
                     </div>
 
                     <div class="top-links">
                         <ul>
                             <li><a href="#">Devenez Partenaire</a></li>
-                            <li><a href="#">Pourquoi Covoiturer</a></li>
-                            <li><a href="#">Programme de récompenses</a></li>
+                            <li><a href="<?php echo $this->config->item('base_url');?>index.php/gagnants/index">Gagnants sur toute la ligne</a></li>
+                            <li><a href="<?php echo $this->config->item('base_url');?>index.php/recompenses/index">Programme de récompenses</a></li>
                             <li><a href="#">Alleo?</a></li>
                         </ul>
                     </div>
