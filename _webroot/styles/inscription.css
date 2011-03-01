@@ -1,0 +1,193 @@
+#header-bottom {
+    padding: 80px 0 20px 15px;
+    width: 52%;
+}
+body{
+    background: url('images/background_nologo.jpg') no-repeat top center #222222;
+}
+
+#header-bottom h2{
+    font-size: 28px;
+    float:left;
+}
+
+#header-bottom h2.etapes{
+    float: right;
+}
+#header-bottom .etapes ul{
+    margin-top: 0;
+}
+#header-bottom .etapes li{
+    background: url('images/bulle_etape_inactive.png') no-repeat center center transparent;
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 5px;
+    text-align: center;
+    width: 24px;
+}
+#header-bottom .etapes li.active{
+    background: url('images/bulle_etape.png') no-repeat center center transparent;
+}
+
+#content .left{
+    float: left;
+    margin-left: 15px;
+    width: 52%;
+}
+#content .left fieldset{
+    border-top: 1px solid #536b30;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #536b30;
+    padding-bottom: 25px;
+    padding-left: 0;
+}
+#content .left fieldset legend{
+    padding-right: 10px;
+    font-style: italic;
+    color: #71AA1F;
+}
+#content .left fieldset p{
+    color: #8F8F8F;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0;
+    width: 295px;
+}
+#content .left fieldset label{
+    display: inline-block;
+    padding-right: 10px;
+    text-align: right;
+    width: 36%;
+    font-size: 13px;
+    font-style: italic;
+    color: #8f8f8f;
+}
+
+#content .left span.description{
+    color: #71AA1F;
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    margin-left: 39%;
+    padding-top: 3px;
+}
+#content .left fieldset input[type="text"], #content .left fieldset textarea{
+    -moz-border-radius: 14px 14px 14px 14px;
+    border: 1px solid;
+    margin-top: 15px;
+    width: 290px;
+    padding: 0 10px;
+}
+#content .left fieldset textarea{
+    height: 100px;
+}
+#content .left fieldset input.pwd{
+    width: 200px;
+}
+
+#content .right{
+    float: right;
+    width: 42%;
+    border-top: 1px solid #505050;
+    margin-left: 35px;
+    margin-top: 9px;
+}
+
+#content .right .stat .left{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}
+#content .right .stat{
+    border-bottom: 1px solid #505050;
+    padding: 10px;
+}
+#content .right .stat .right{
+    border-top: none;
+    float: left;
+    margin-top: 0;
+    width: auto;
+    color: #8F8F8F;
+    font-size: 15px;
+}
+
+.comment-box{
+    margin-top: 25px;
+}
+.comment-box .top{
+    background: #e1ebc9;
+    -moz-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+    height: 20px;
+}
+.comment-box .center{
+    background: #e1ebc9;
+}
+.comment-box .center p{
+    margin: 0;
+    color: black;
+    padding: 5px 35px;
+}
+.comment-box .bottom{
+    background: #e1ebc9;
+    -moz-border-radius: 0px 0px 7px 7px;
+    border-radius: 0px 0px 7px 7px;
+    height: 20px;
+}
+.comment-box .member p{
+    text-align: right;
+    padding-top: 15px;
+    background: url('images/fleche_bulle.png') no-repeat 355px top;
+    margin-top: 0;
+}
+
+#content .left .prev_next{
+    text-align: right;
+}
+#previous, #next, #cancel, #submit{
+    -moz-border-radius: 4px 4px 4px 4px;
+    border: 1px solid #52623c;
+    height: 25px;
+    margin-top: 10px;
+    padding: 0 10px 3px;
+    width: 88px;
+    font-size: 12px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.16, rgb(76,115,21)),
+        color-stop(0.50, rgb(128,178,53))
+    );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(76,115,21) 16%,
+        rgb(128,178,53) 50%
+    );
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-style: italic;
+}
+#cancel, #submit{
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.38, rgb(39,53,19)),
+        color-stop(0.67, rgb(86,101,66))
+    );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(39,53,19) 38%,
+        rgb(86,101,66) 67%
+    );
+    margin-left: 15px;
+    margin-right: 10px;
+}

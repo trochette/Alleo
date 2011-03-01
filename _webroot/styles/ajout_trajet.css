@@ -1,0 +1,55 @@
+#content .left {
+    float: left;
+    margin-left: 15px;
+    width: 60%;
+}
+
+#content .right {
+    float: right;
+    width: 35%;
+}
+
+#content input[type="text"], #content textarea{
+    -moz-border-radius: 14px 14px 14px 14px;
+    border-radius: 14px 14px 14px 14px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    width: 315px;
+    padding: 0 10px;
+    color: #8B8B8B;
+    font-size: 12px;
+    font-style: italic;
+}
+.line span{
+    color: #8B8B8B;
+    font-size: 12px;
+    font-style: italic;
+}
+select{
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid;
+    color: #8B8B8B;
+    font-size: 12px;
+    font-style: italic;
+    height: 20px;
+    padding: 1px 5px;
+}
+#content textarea{
+    height: 100px;
+}
+
+#map{
+    background-color: #E5E3DF;
+    height: 350px;
+    position: relative;
+    width: 565px;
+}
+
+#submit_btn{
+    float: right;
+    border:1px solid black;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+}

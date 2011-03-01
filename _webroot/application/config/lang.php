@@ -1,0 +1,1 @@
+<?php	$lang['username'] = "Nom de d'utilisateur";?>
